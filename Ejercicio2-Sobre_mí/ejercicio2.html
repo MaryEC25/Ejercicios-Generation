@@ -1,56 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de mí</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>Mariana Encarnación Calzada</h1>
-    <img src="/images/MEC.jpg" alt="Fotografía de Mariana Encarnación Calzada">
-        <p>
-            Nací un 25 de julio y actualmente tengo 28 años. Como curiosidad soy signo Leo y mi ascendente es Virgo. Actualmente resido en mi queridísima CDMX, así es, soy chilanga de nacimiento. Estudié la licenciatura en Letras Hispánicas en la UAM, aunque actualmente estoy incursionando al área TI. Soy madre soltera de dos gathijos que creen que el teclado es su cama.
+    <header class="barraNavegacion">
+        <nav class="navbar navbar-expand fixed-top navbar-dark" style="background-color: #4A2545;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img
+                        src="/images/logo.png" alt="Logo" width="380"
+                        height="50" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="encabezado container">
+        <section class="row justify-content-center text-center">
+            <div class="col-12 mb-4">
+                <h1 class="titulo">Mariana Encarnación Calzada</h1>
+            </div>
+            <div class="col-12 col-md-8 col-lg-8">
+                <figure class="imagen mb-4">
+                    <img src="/images/MEC.jpg" class="img-fluid rounded shadow"
+                        alt="Fotografía de Mariana Encarnación Calzada">
+                </figure>
+                <p class="texto">
+                    Nací un 25 de julio y actualmente tengo 28 años. Como curiosidad soy signo Leo y mi ascendente es
+                    Virgo.
+                    Actualmente resido en mi queridísima CDMX, así es, soy chilanga de nacimiento. Estudié la
+                    licenciatura
+                    en
+                    Letras
+                    Hispánicas en la UAM, aunque actualmente estoy incursionando al área TI. Soy madre soltera de dos
+                    gathijos
+                    que
+                    creen que el teclado es su cama.
+                </p>
+            </div>
+        </section>
+    </main>
+
+<!--
+    <h2 class="subtitulo">Mis hobbies y curiosidades</h2>
+    <ul class="texto">
+        <li>
+            Me gusta escuchar música de todo tipo y conocer nuevos artistas. No importa si son en español o en ruso, me
+            encanta descubrir nueva música.
+        </li>
+        <li>
+            A pesar de considerarme una persona “racional” me encanta lo relacionado al misticismo. Tengo una colección
+            de tarots.
+        </li>
+        <li>
+            Antes de decidirme a estudiar Letras Hispánicas, estudié Economía. Cuando estaba a mitad de la carrera
+            decidí cambiarme.
+        </li>
+        <li>
+            Intento buscar escritoras nuevas para leer todo el tiempo. Mi escritora favorita es Amparo Dávila y mi libro
+            favorito es <i>Conjunto vacío</i> de Verónica Gerber
+        </li>
+        <li>
+            Me considero feminista y en proceso de deconstrucción.
+        </li>
+        <li>
+            Mi hobbie más reciente es entrenar ejercicios de fuerza.
+        </li>
+        <li>
+            Mi videojuego favorito es <i>The Sims 4</i>. Puedo pasar horas y horas sin despegarme de la computadora.
+        </li>
+        <li>
+            Amo descubrir y ver series. Mi película favorita es <i>Edward Scissorhands</i>, pero mi saga favorita es
+            <i>The Lord of the Rings</i>. Mis series favoritas son <i>Game of Thrones</i> y <i>The Office</i>.
+        </li>
+        <li>
+            A pesar de lo caótica que es la CDMX disfruto manejar, pues es algo que me relaja mientras escucho mi música
+            favorita.
+        </li>
+        <li>
+            Me fascinan los juegos de mesa, por lo que siempre estoy buscando nuevas opciones. Aunque no es mi top,
+            tengo una colección de juegos <i>Monopoly</i>.
+        </li>
+    </ul>
+    <h2 class="subtitulo">Mi top 5 de canciones del momento</h2>
+    <ol class="texto">
+        <li> <a href="https://youtu.be/MAv6HUVmE0I?si=bjPJT7zS_rsXEQfP" target="_blank"> "Sunday" - The Cranberries</a>
+        </li>
+        <li> <a href="https://youtu.be/tI-5uv4wryI?si=IXUCo2b4K5YIFv7P" target="_blank"> "Champagne Supernova" -
+                Oasis</a> </li>
+        <li> <a href="https://youtu.be/Jne9t8sHpUc?si=edkUdiW4sFQB3tWQ" target="_blank"> "Ironic" - Alanis
+                Morissette</a> </li>
+        <li> <a href="https://youtu.be/scif2vfg1ug?si=LCJ0gM0WG1-km6_p" target="_blank"> "Inbetween Days" - The Cure</a>
+        </li>
+        <li> <a href="https://youtu.be/P_4uEaZQ2Kg?si=Nw3ODIbMd7-o5L_1" target="_blank"> "Comfortably Numb" - Pink
+                Floyd</a> </li>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+        <script type="module" src="/src/js/main.js"></script>
+    </ol>
+-->
+
+    <footer class="pie navbar-dark py-3" style="background-color: #6D2E46;">
+        <p class="container text-center mb-1">
+            <em>“There is no gate, no lock, no bolt that you can set upon the freedom of my mind.”</em> ― Virginia
+            Woolf
         </p>
-    <h2>Mis hobbies y curiosidades</h2>
-        <ul>
-            <li>
-                Me gusta escuchar música de todo tipo y conocer nuevos artistas. No importa si son en español o en ruso, me encanta descubrir nueva música.
-            </li>
-            <li>
-                A pesar de considerarme una persona “racional” me encanta lo relacionado al misticismo. Tengo una colección de tarots.
-            </li>
-            <li>
-                Antes de decidirme a estudiar Letras Hispánicas, estudié Economía. Cuando estaba a mitad de la carrera decidí cambiarme.
-            </li>
-            <li>
-                Intento buscar escritoras nuevas para leer todo el tiempo. Mi escritora favorita es Amparo Dávila y mi libro favorito es <i>Conjunto vacío</i> de Verónica Gerber
-            </li>
-            <li>
-                Me considero feminista y en proceso de deconstrucción.
-            </li>
-            <li>
-                Mi hobbie más reciente es entrenar ejercicios de fuerza.
-            </li>
-            <li>
-                Mi videojuego favorito es <i>The Sims 4</i>. Puedo pasar horas y horas sin despegarme de la computadora.
-            </li>
-            <li>
-                Amo descubrir y ver series. Mi película favorita es <i>Edward Scissorhands</i>, pero mi saga favorita es <i>The Lord of the Rings</i>. Mis series favoritas son <i>Game of Thrones</i> y <i>The Office</i>.
-            </li>
-            <li>
-                A pesar de lo caótica que es la CDMX disfruto manejar, pues es algo que me relaja mientras escucho mi música favorita.
-            </li>
-            <li>
-                Me fascinan los juegos de mesa, por lo que siempre estoy buscando nuevas opciones. Aunque no es mi top, tengo una colección de juegos <i>Monopoly</i>.
-            </li>
-        </ul>
-    <h2>Mi top 5 de canciones del momento</h2>
-        <ol>
-            <li> <a href="https://youtu.be/MAv6HUVmE0I?si=bjPJT7zS_rsXEQfP" target="_blank"> "Sunday" - The Cranberries</a> </li>
-            <li> <a href="https://youtu.be/tI-5uv4wryI?si=IXUCo2b4K5YIFv7P" target="_blank"> "Champagne Supernova" - Oasis</a> </li>
-            <li> <a href="https://youtu.be/Jne9t8sHpUc?si=edkUdiW4sFQB3tWQ" target="_blank"> "Ironic" - Alanis Morissette</a> </li>
-            <li> <a href="https://youtu.be/scif2vfg1ug?si=LCJ0gM0WG1-km6_p" target="_blank"> "Inbetween Days" - The Cure</a> </li>
-            <li> <a href="https://youtu.be/P_4uEaZQ2Kg?si=Nw3ODIbMd7-o5L_1" target="_blank"> "Comfortably Numb" - Pink Floyd</a> </li>
-        </ol>
+        <p class="container text-center mb-0">
+            © 2025 - Mariana Encarnacion Calzada
+        </p>
+    </footer>
 </body>
+
 </html>

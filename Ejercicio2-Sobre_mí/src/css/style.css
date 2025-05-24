@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+body {
+  background-image: url('/images/Designer\ \(4\).jpeg');
+  background-size: cover;       /* Cubre todo el espacio */
+  background-position: center;  /* Centra la imagen */
+  background-attachment: fixed; /* Fondo estático (no se mueve al hacer scroll) */
+  background-repeat: no-repeat; /* Evita repetición */
+  margin: 0;
+  min-height: 100vh;
+}
+
+
+.navbar-brand{
+    font-family: "Caudex";
+    font-size: 20px;
+}
+
+.nav-item{
+    font-family: "Caudex";
+    font-size: 18px;
+}
+
+.encabezado{
+    background-color: rgba(179, 153, 212, 0.95);
+    padding-top: 130px;
+}
+
+
+.titulo {
+    font-family: "Cinzel Decorative";
+    font-size: 40px;
+}
+
+.imagen{
+    padding-top: 50px;
+}
+
+.img-fluid{
+    width:350px;
+    height:350px;
+}
+
+.subtitulo {
+    font-family: "Cinzel Decorative";
+}
+
+.texto {
+    font-family: "Caudex";
+    font-size: 25px;
+    text-align: justify;
+    padding-bottom: 100px;
+    padding-top: 80px;
+}
+
+.pie{
+    font-family: "Caudex";
+    font-size: 15px;
+    color: #F0E6FF;
+    background-color: #6D2E46;
+}
